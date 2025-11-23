@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 class="logo">Fitness Pro</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#workouts">Workouts</a>
+            <a href="#diet">Diet</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Build Your Dream Body</h2>
+        <p>Stay Fit • Stay Healthy • Stay Strong</p>
+        <button onclick="showMessage()">Start Now</button>
+    </section>
+
+    <!-- Workouts -->
+    <section id="workouts" class="section">
+        <h2>Workout Routines</h2>
+        <div class="workout-container">
+            <article class="card">
+                <h3>Full Body Workout</h3>
+                <p>A balanced full-body routine targeting all major muscle groups.</p>
+                <a href="fullbody.html" class="btn">View Details</a>
+            </article>
+            <article class="card">
+                <h3>Cardio Workout</h3>
+                <p>Cardiovascular exercises for heart and lung health.</p>
+                <a href="cardio.html" class="btn">View Details</a>
+            </article>
+            <article class="card">
+                <h3>Strength Training</h3>
+                <p>Focus on heavy compound lifts and strength building.</p>
+                <a href="strength.html" class="btn">View Details</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Diet -->
+    <section id="diet" class="section">
+        <h2>Healthy Diet Plan</h2>
+        <p>Eat clean, drink water, stay active.</p>
+        <ul>
+            <li>✔ High protein meals</li>
+            <li>✔ Green vegetables</li>
+            <li>✔ Proper hydration</li>
+            <li>✔ Avoid junk food</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <input id="email" type="text" placeholder="Enter your email">
+        <button onclick="submitEmail()">Submit</button>
+        <p id="response"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
