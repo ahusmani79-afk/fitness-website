@@ -3,13 +3,7 @@
     padding: 0;
     font-family: Arial;
     box-sizing: border-box;
-}
 
-body {
-    background: blue;
-}
-body, .workout-detail, .section, .container {
-    background: blue !important;
 }
 /* Header */
 header {
@@ -273,5 +267,83 @@ h2, p, ul, li {
     .video-container {
         width: 100%;
         padding-bottom: 80%;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Black background */
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* ---------- Header ---------- */
+header {
+    background-color: #ff2e2e;
+    padding: 15px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ---------- Container ---------- */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ---------- Video / Workout Cards ---------- */
+.card {
+    background-color: #1a1a1a; 
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 12px;
+    border: 1px solid #333333;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #ff2e2e;
+}
+
+/* Video styling */
+.card video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ---------- Buttons ---------- */
+button, .btn {
+    background-color: #ff2e2e;
+    border: none;
+    padding: 12px 18px;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #ff4f4f;
+    transform: scale(1.05);
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3 {
+    color: #ff2e2e;
+}
+
+/* ---------- Mobile Responsive ---------- */
+@media (max-width: 768px) {
+    header {
+        font-size: 22px;
+    }
+    .card {
+        padding: 10px;
     }
 }
